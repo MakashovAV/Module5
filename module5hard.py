@@ -3,6 +3,7 @@
 
 import time
 
+
 def run_video(video):
     for run in range(1, video.duration + 1):
         video.time_now = run
@@ -10,6 +11,8 @@ def run_video(video):
         time.sleep(1)
     video.time_now = 0
     print("Конец видео")
+
+
 class User:
     def __init__(self, nickname, password, age):
         self.nickname = nickname
